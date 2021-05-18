@@ -149,5 +149,10 @@ def get_api_listing():
     result['total'] = len(processed_cuisines)
     return result
 
+@app.route('/')
+def index():
+    return "<h1>Welcome to our server !!</h1>"
+
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True, port=os.environ.get('PORT', 3001))
