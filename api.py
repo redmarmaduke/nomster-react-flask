@@ -8,10 +8,14 @@ from flask import Flask
 # load environment variables from dotenv
 load_dotenv()
 
-app = Flask(__name__)
+if os.environ.get('FLASK_ENV') == "development":
+    app = Flask(__name__)
+else:
+    app = Flask(__name__, static_url_path='', static_folder='view/build')
+    
 yelp_api = YelpAPI(os.environ.get('REACT_APP_MSN_API_KEY', ""))
 
-@app.route('/api/listing')
+@app.route('/api/listing', methods=['GET'])
 def get_api_listing():
     cuisines = {
         "Argentine",
@@ -149,9 +153,10 @@ def get_api_listing():
     result['total'] = len(processed_cuisines)
     return result
 
-@app.route('/')
+@app.route('/', methods=['GET'])
 def index():
-    return "<h1>Welcome to our server !!</h1>"
+    return app.send_static_file('index.html')
+    
 
 
 if __name__ == '__main__':
