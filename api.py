@@ -12,7 +12,7 @@ if os.environ.get('FLASK_ENV') == "development":
     app = Flask(__name__)
 else:
     app = Flask(__name__, static_url_path='', static_folder='view/build')
-    
+
 yelp_api = YelpAPI(os.environ.get('REACT_APP_MSN_API_KEY', ""))
 
 @app.route('/api/listing', methods=['GET'])
@@ -157,7 +157,9 @@ def get_api_listing():
 def index():
     return app.send_static_file('index.html')
     
-
+@app.errorhandler(404)
+def not_found(e):
+    return app.send_static_file('index.html')
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True, port=os.environ.get('PORT', 3001))
