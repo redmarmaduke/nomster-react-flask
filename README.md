@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Nomster React + Flask
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a refactored version of the html/js based nomster application.  It now
+uses react and python/flask. The python backend connects to the yelp api and uses
+gunicorn.
 
-## Available Scripts
+## Getting Started
 
-In the project directory, you can run:
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-### `yarn start`
+### Prerequisites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Git, SVN, Git Desktop or Microsoft Visual Studio or some disk drive
+space to unzip the contents of the repository.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Installing
 
-### `yarn test`
+1) Visit https://github.com/redmarmaduke/nomster-react-flask.
+2) Select the Clone or Download button
+3) Select the most appropriate format/method for download. 
+```
+ex. using the command line git tool
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+git clone https://github.com/redmarmaduke/weather-dashboard.git
 
-### `yarn build`
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4) Open up the index.html file present in your favorite browser.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Built With
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* [Python](https://www.python.org/)
+* [React](https://reactjs.org/docs/)
+* [Flask](https://pypi.org/project/Flask/)
+* [Green Unicorn](https://gunicorn.org/)
+* [Yelp API](https://pypi.org/project/yelpapi/)
 
-### `yarn eject`
+## Deployed Link
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+* [See Live Site](https://lit-escarpment-89360.herokuapp.com/)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Authors
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+* **Manuel Nunes** 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- [Link to Portfolio Site](https://portfoleieio.herokuapp.com/)
+- [Link to Github](https://github.com/redmarmaduke/)
+- [Link to LinkedIn](https://www.linkedin.com/in/manuel-nunes-272ba31b/)
 
-## Learn More
+See also the list of [contributors](https://redmarmaduke.github.io/weather-dashboard/CONTRIBUTING) who participated in this project.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## License
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This project is licensed under the MIT License
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
