@@ -1,0 +1,20 @@
+{
+  "name": "flask-react-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "flask": "flask run",
+    "start:prod": "echo HI",
+    "start:dev": "concurrently \"npm run flask\" \"cd view && npm start\"",
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^6.1.0",
+    "if-env": "^1.0.4"
+  }
+}
