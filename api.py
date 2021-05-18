@@ -11,7 +11,7 @@ load_dotenv()
 if os.environ.get('FLASK_ENV') == "development":
     app = Flask(__name__)
 else:
-    app = Flask(__name__, static_url_path='', static_folder='view/build')
+    app = Flask(__name__, static_url_path='', static_folder='build')
 
 yelp_api = YelpAPI(os.environ.get('REACT_APP_MSN_API_KEY', ""))
 
